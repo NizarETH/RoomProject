@@ -69,6 +69,8 @@ import kotlinx.coroutines.launch
                         }
                     }
 
+                    editTextName.text.clear()
+
                 }
                 "supprimer" -> GlobalScope.launch(Dispatchers.IO) {
                     itemDao.delete(item)
